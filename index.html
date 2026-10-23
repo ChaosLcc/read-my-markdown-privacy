@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Read My Markdown 隐私政策：本地文档处理、浏览器存储、文件访问权限和公开支持联系方式。">
+  <title>隐私政策 · Read My Markdown</title>
+  <link rel="icon" href="./icons/icon-32.png" type="image/png">
+  <style>
+    :root { color-scheme: light; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif; color: #202731; background: #fff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-size: 15px; line-height: 1.85; }
+    a { color: #315fe8; text-underline-offset: 3px; }
+    header, main, footer { width: min(100% - 48px, 900px); margin: auto; }
+    header { display: flex; align-items: center; gap: 12px; padding: 27px 0; border-bottom: 1px solid #e5e9ef; }
+    header img { width: 40px; height: 40px; }
+    .brand { font-size: 15px; font-weight: 700; line-height: 1.5; }
+    .brand span { display: block; font-size: 12px; color: #727c8a; font-weight: 400; }
+    nav { margin-left: auto; display: flex; gap: 18px; font-size: 13px; }
+    main { padding: 48px 0 60px; }
+    .eyebrow { color: #315fe8; font-size: 11px; font-weight: 700; letter-spacing: 1px; }
+    h1 { margin: 8px 0 8px; font-size: 36px; line-height: 1.3; }
+    .intro { max-width: 680px; margin: 0 0 18px; font-size: 18px; color: #56616e; }
+    .metadata { font-size: 12px; color: #727c8a; }
+    .principles { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; padding: 23px 0; margin: 30px 0 38px; border-top: 1px solid #e5e9ef; border-bottom: 1px solid #e5e9ef; }
+    .principles strong { display: block; font-size: 15px; }
+    .principles span { font-size: 12px; color: #727c8a; }
+    h2 { margin: 30px 0 10px; font-size: 19px; }
+    h3 { margin: 23px 0 8px; font-size: 16px; }
+    p { margin: 9px 0 14px; }
+    ul { padding-left: 22px; }
+    li { margin: 7px 0; }
+    .section { scroll-margin-top: 24px; }
+    .english { margin-top: 52px; padding-top: 38px; border-top: 1px solid #e5e9ef; }
+    footer { padding: 24px 0 32px; border-top: 1px solid #e5e9ef; font-size: 12px; color: #727c8a; }
+    code { background: #f2f5f9; padding: 2px 5px; border-radius: 3px; font-size: .9em; overflow-wrap: anywhere; }
+    @media(max-width:600px) { header, main, footer { width: calc(100% - 36px); } main { padding-top: 32px; } h1 { font-size: 30px; } nav { gap: 12px; } .principles { grid-template-columns: 1fr; gap: 12px; } }
+  </style>
+</head>
+<body>
+  <header><img src="./icons/icon-48.png" alt=""><div class="brand">Read My Markdown<span>Local documents. A clearer view.</span></div><nav aria-label="语言"><a href="#zh">中文</a><a href="#en" lang="en">English</a></nav></header>
+  <main>
+    <section id="zh" class="section" lang="zh-CN">
+      <div class="eyebrow">PRIVACY &amp; SUPPORT</div>
+      <h1>隐私政策</h1>
+      <p class="intro">你的 Markdown 在本机浏览器内处理。下面说明扩展使用哪些数据、保存在哪里，以及你如何管理它们。</p>
+      <div class="metadata">生效日期：2026 年 10 月 23 日 · 适用产品：Read My Markdown · 发布者：WSD_超哥哥</div>
+      <div class="principles"><div><strong>无需账号</strong><span>不要求登录或注册</span></div><div><strong>不上传文档给开发者</strong><span>文档解析与渲染在本机进行</span></div><div><strong>阅读状态保存在本地</strong><span>便于继续上次阅读</span></div></div>
+      <h2>1. 本政策适用于什么</h2>
+      <p>本政策适用于由 WSD_超哥哥发布、面向 Microsoft Edge 的 Read My Markdown 浏览器扩展。本扩展的主要用途是阅读与导航用户主动选择的本地 Markdown 文档，不提供云同步服务或 Markdown 编辑功能。</p>
+      <h2>2. 扩展读取和使用的数据</h2>
+      <ul><li><strong>你主动打开的文件：</strong>Markdown 正文、文件名、相对路径、修改时间，以及文档引用且可访问的资源，用于生成预览和检测文件更新。</li><li><strong>你选择的文件夹：</strong>目录及其中的相关文件信息，用于生成文件树、搜索文件名和导航文档。</li><li><strong>阅读状态：</strong>最近打开的文件或目录、当前文件路径、滚动位置、目录折叠状态、左右侧栏状态、书签路径和主题偏好。</li></ul>
+      <p>扩展不要求提供账号、密码或支付信息，不内置广告、分析统计或追踪服务，也不由开发者收集用户的浏览历史。</p>
+      <h2>3. 本地存储与保留方式</h2>
+      <p>扩展使用浏览器的 IndexedDB 和 localStorage 保存必要的阅读状态与偏好。浏览器支持时，扩展保存用户授权的文件或目录句柄，以便刷新后继续读取原文件。兼容拖拽导入无法取得持久句柄时，可能在 IndexedDB 保存导入文件的本地副本，用于恢复最近会话。</p>
+      <p>这些信息不会因为关闭阅读器标签页而自动清除；最近会话会随后续使用更新，偏好和书签会保留至被修改或清除。文件访问权限仍由浏览器管理，可能需要你再次授权。开发者不会接收到这些本地记录或文件副本。</p>
+      <h2>4. 权限如何使用</h2>
+      <p>文件和目录访问来自你主动使用的浏览器选择器或拖拽操作。你可以拒绝授权，或在浏览器提供的权限管理中撤销授权。</p>
+      <p><code>file:///*</code> 内容脚本匹配用于直接打开本地 Markdown 文件网址后的预览。脚本会检查文件扩展名；普通 HTTP/HTTPS 网页不在其匹配范围内。此入口需要你在扩展详情页手动开启“允许访问文件网址”。</p>
+      <h2>5. 网络请求和第三方资源</h2>
+      <p>扩展不把文档上传到开发者服务器，也不依赖开发者提供的文档处理服务。但这不代表打开任意 Markdown 都不会产生网络请求：如果文档包含远程图片或其他外部资源，浏览器可能访问相应资源地址；你点击外部链接时，也会访问对应网站。</p>
+      <p>这些第三方可能获得 IP 地址、浏览器信息以及浏览器发送的请求信息，并适用各自的隐私政策。开发者不控制这些网站。若希望离线阅读，请使用只引用本地资源的文档。</p>
+      <h2>6. 如何控制或删除数据</h2>
+      <p>你可以停止使用、撤销文件访问权限，或在浏览器中清除本扩展的本地数据；卸载扩展也可以移除其本地存储。清除本地数据后，将无法恢复由扩展保存的阅读状态或兼容导入副本，需要重新打开原始文件。</p>
+      <p>扩展只请求读取权限，不会修改你选择的原始 Markdown 文件。清除扩展数据不会删除原始文件。</p>
+      <h2>7. 联系支持时提供的信息</h2>
+      <p>如果你主动发送支持邮件，发布者会收到你提供的邮箱、邮件内容及附件，并仅用于处理问题或回复咨询。请勿发送不必要的敏感文档。邮件会通过你和发布者使用的邮件服务处理，其保留方式也受相关邮件服务影响。</p>
+      <h2>8. 政策变更与联系方式</h2>
+      <p>如扩展的数据处理方式发生变化，本页面会更新，并修改生效日期。如有隐私问题或需要支持，请联系：</p>
+      <p><strong>发布者：</strong>WSD_超哥哥<br><strong>邮箱：</strong><a href="mailto:420021818@qq.com">420021818@qq.com</a></p>
+    </section>
+    <section id="en" class="section english" lang="en">
+      <div class="eyebrow">ENGLISH VERSION</div><h1>Privacy Policy</h1>
+      <p class="intro">Your Markdown is processed in your local browser. This policy explains the data the extension uses and how you can control it.</p>
+      <div class="metadata">Effective: October 23, 2026 · Product: Read My Markdown · Publisher: WSD_超哥哥</div>
+      <h2>1. Scope</h2><p>This policy applies to the Read My Markdown extension for Microsoft Edge, published by WSD_超哥哥. It reads and navigates local Markdown documents selected by the user. It does not provide cloud synchronization or Markdown editing.</p>
+      <h2>2. Data used by the extension</h2><p>To provide previews and navigation, the extension reads user-selected Markdown content, file names, relative paths, modification times, directory entries and accessible resources referenced by a document. It also uses recent file/folder handles, the selected path, reading positions, collapsed folders, panel visibility, bookmark paths and theme preferences.</p><p>No account, password or payment information is required. The extension contains no advertising, analytics or tracking service, and the publisher does not collect browsing history through it.</p>
+      <h2>3. Local storage and retention</h2><p>Reading state and preferences are stored in IndexedDB and localStorage in the browser. Where supported, user-authorized file/directory handles are saved to resume access after a reload. Compatibility imports without persistent handles may save local file copies in IndexedDB to restore the recent session.</p><p>Closing a reader tab does not automatically delete this data. Recent sessions are updated during use, while preferences and bookmarks remain until changed or cleared. File permissions remain subject to browser controls and may require renewed authorization. This local data is not sent to the publisher.</p>
+      <h2>4. File permissions</h2><p>File and directory access is initiated by a user picker or drag-and-drop action. You can refuse or revoke access using available browser controls. The <code>file:///*</code> content-script match is used to render supported local Markdown file URLs after checking the file extension; it does not match ordinary HTTP/HTTPS pages. This entry point requires the user to enable “Allow access to file URLs”.</p>
+      <h2>5. Network requests and third parties</h2><p>The extension does not upload documents to the publisher or use a publisher-operated document processing service. However, a document containing remote images or other external resources may cause the browser to request those resources, and clicking an external link opens that website.</p><p>Third parties may receive your IP address, browser information and other request information sent by the browser, and their own privacy policies apply. The publisher does not control those websites. For offline reading, use documents referencing only local resources.</p>
+      <h2>6. Control and deletion</h2><p>You may stop using the extension, revoke file access or clear its local data through the browser. Uninstalling the extension can also remove its local storage. Clearing data removes saved reading state and imported snapshots; reopen the originals to continue. The extension requests read access and does not modify or delete your original Markdown files.</p>
+      <h2>7. Support correspondence</h2><p>If you email support, the publisher receives the email address, message and attachments you choose to provide, for handling the request and responding. Avoid sending unnecessary sensitive documents. Your and the publisher's email services also process this correspondence, subject to their own retention practices.</p>
+      <h2>8. Changes and contact</h2><p>If data practices change, this page and its effective date will be updated. For privacy questions and support, contact publisher WSD_超哥哥 at <a href="mailto:420021818@qq.com">420021818@qq.com</a>.</p>
+    </section>
+  </main>
+  <footer>Read My Markdown · WSD_超哥哥 · <a href="mailto:420021818@qq.com">联系支持 / Contact support</a></footer>
+</body>
+</html>
