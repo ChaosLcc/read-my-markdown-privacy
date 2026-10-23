@@ -49,7 +49,7 @@
       <h2>1. 本政策适用于什么</h2>
       <p>本政策适用于由 WSD_超哥哥发布、面向 Microsoft Edge 的 Read My Markdown 浏览器扩展。本扩展的主要用途是阅读与导航用户主动选择的本地 Markdown 文档，不提供云同步服务或 Markdown 编辑功能。</p>
       <h2>2. 扩展读取和使用的数据</h2>
-      <ul><li><strong>你主动打开的文件：</strong>Markdown 正文、文件名、相对路径、修改时间，以及文档引用且可访问的资源，用于生成预览和检测文件更新。</li><li><strong>你选择的文件夹：</strong>目录及其中的相关文件信息，用于生成文件树、搜索文件名和导航文档。</li><li><strong>阅读状态：</strong>最近打开的文件或目录、当前文件路径、滚动位置、目录折叠状态、左右侧栏状态、书签路径和主题偏好。</li></ul>
+      <ul><li><strong>你主动打开的文件：</strong>Markdown 正文、文件名、相对路径、修改时间，以及文档引用且可访问的资源，用于生成预览和检测文件更新。</li><li><strong>你选择的文件夹：</strong>目录及其中的相关文件信息，用于生成文件树、搜索文件名和导航文档。</li><li><strong>阅读状态：</strong>最近打开的文件或目录、当前文件路径、滚动位置、目录折叠状态、左右侧栏状态、书签路径、主题和阅读宽度偏好。</li></ul>
       <p>扩展不要求提供账号、密码或支付信息，不内置广告、分析统计或追踪服务，也不由开发者收集用户的浏览历史。</p>
       <h2>3. 本地存储与保留方式</h2>
       <p>扩展使用浏览器的 IndexedDB 和 localStorage 保存必要的阅读状态与偏好。浏览器支持时，扩展保存用户授权的文件或目录句柄，以便刷新后继续读取原文件。兼容拖拽导入无法取得持久句柄时，可能在 IndexedDB 保存导入文件的本地副本，用于恢复最近会话。</p>
@@ -65,7 +65,10 @@
       <p>扩展只请求读取权限，不会修改你选择的原始 Markdown 文件。清除扩展数据不会删除原始文件。</p>
       <h2>7. 联系支持时提供的信息</h2>
       <p>如果你主动发送支持邮件，发布者会收到你提供的邮箱、邮件内容及附件，并仅用于处理问题或回复咨询。请勿发送不必要的敏感文档。邮件会通过你和发布者使用的邮件服务处理，其保留方式也受相关邮件服务影响。</p>
-      <h2>8. 政策变更与联系方式</h2>
+      <h2>8. 自愿支持作者</h2>
+      <p>你可以主动打开“支持作者”窗口，查看随安装包提供的微信或支付宝收款二维码。展示二维码本身不会触发付款，也不会将文档或阅读记录发送给支付平台。打赏完全自愿，不影响任何阅读功能。</p>
+      <p>扫码和支付由你在相应支付应用中完成，相关数据由支付平台依据其隐私政策处理。平台可能向收款方展示交易金额、时间以及平台允许显示的付款方信息。扩展不读取、保存或验证支付结果，不收集支付密码、银行卡信息或支付凭据。</p>
+      <h2>9. 政策变更与联系方式</h2>
       <p>如扩展的数据处理方式发生变化，本页面会更新，并修改生效日期。如有隐私问题或需要支持，请联系：</p>
       <p><strong>发布者：</strong>WSD_超哥哥<br><strong>邮箱：</strong><a href="mailto:420021818@qq.com">420021818@qq.com</a></p>
     </section>
@@ -74,13 +77,14 @@
       <p class="intro">Your Markdown is processed in your local browser. This policy explains the data the extension uses and how you can control it.</p>
       <div class="metadata">Effective: October 23, 2026 · Product: Read My Markdown · Publisher: WSD_超哥哥</div>
       <h2>1. Scope</h2><p>This policy applies to the Read My Markdown extension for Microsoft Edge, published by WSD_超哥哥. It reads and navigates local Markdown documents selected by the user. It does not provide cloud synchronization or Markdown editing.</p>
-      <h2>2. Data used by the extension</h2><p>To provide previews and navigation, the extension reads user-selected Markdown content, file names, relative paths, modification times, directory entries and accessible resources referenced by a document. It also uses recent file/folder handles, the selected path, reading positions, collapsed folders, panel visibility, bookmark paths and theme preferences.</p><p>No account, password or payment information is required. The extension contains no advertising, analytics or tracking service, and the publisher does not collect browsing history through it.</p>
+      <h2>2. Data used by the extension</h2><p>To provide previews and navigation, the extension reads user-selected Markdown content, file names, relative paths, modification times, directory entries and accessible resources referenced by a document. It also uses recent file/folder handles, the selected path, reading positions, collapsed folders, panel visibility, bookmark paths, theme and reading-width preferences.</p><p>No account, password or payment information is required. The extension contains no advertising, analytics or tracking service, and the publisher does not collect browsing history through it.</p>
       <h2>3. Local storage and retention</h2><p>Reading state and preferences are stored in IndexedDB and localStorage in the browser. Where supported, user-authorized file/directory handles are saved to resume access after a reload. Compatibility imports without persistent handles may save local file copies in IndexedDB to restore the recent session.</p><p>Closing a reader tab does not automatically delete this data. Recent sessions are updated during use, while preferences and bookmarks remain until changed or cleared. File permissions remain subject to browser controls and may require renewed authorization. This local data is not sent to the publisher.</p>
       <h2>4. File permissions</h2><p>File and directory access is initiated by a user picker or drag-and-drop action. You can refuse or revoke access using available browser controls. The <code>file:///*</code> content-script match is used to render supported local Markdown file URLs after checking the file extension; it does not match ordinary HTTP/HTTPS pages. This entry point requires the user to enable “Allow access to file URLs”.</p>
       <h2>5. Network requests and third parties</h2><p>The extension does not upload documents to the publisher or use a publisher-operated document processing service. However, a document containing remote images or other external resources may cause the browser to request those resources, and clicking an external link opens that website.</p><p>Third parties may receive your IP address, browser information and other request information sent by the browser, and their own privacy policies apply. The publisher does not control those websites. For offline reading, use documents referencing only local resources.</p>
       <h2>6. Control and deletion</h2><p>You may stop using the extension, revoke file access or clear its local data through the browser. Uninstalling the extension can also remove its local storage. Clearing data removes saved reading state and imported snapshots; reopen the originals to continue. The extension requests read access and does not modify or delete your original Markdown files.</p>
       <h2>7. Support correspondence</h2><p>If you email support, the publisher receives the email address, message and attachments you choose to provide, for handling the request and responding. Avoid sending unnecessary sensitive documents. Your and the publisher's email services also process this correspondence, subject to their own retention practices.</p>
-      <h2>8. Changes and contact</h2><p>If data practices change, this page and its effective date will be updated. For privacy questions and support, contact publisher WSD_超哥哥 at <a href="mailto:420021818@qq.com">420021818@qq.com</a>.</p>
+      <h2>8. Voluntary support</h2><p>You may choose to open the support dialog to view WeChat Pay or Alipay payment QR images bundled with the extension. Displaying these images does not initiate a payment or send documents or reading records to a payment provider. Support is voluntary and does not unlock or restrict any reading feature.</p><p>Scanning and payment take place in the payment app you use, subject to the provider's privacy policy. The provider may show the recipient a transaction amount, time and payer information that the provider permits. The extension does not read, store or verify payment results and does not collect payment passwords, bank card details or payment credentials.</p>
+      <h2>9. Changes and contact</h2><p>If data practices change, this page and its effective date will be updated. For privacy questions and support, contact publisher WSD_超哥哥 at <a href="mailto:420021818@qq.com">420021818@qq.com</a>.</p>
     </section>
   </main>
   <footer>Read My Markdown · WSD_超哥哥 · <a href="mailto:420021818@qq.com">联系支持 / Contact support</a></footer>
